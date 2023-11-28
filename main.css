@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    max-width: 100vw;
+    background-color: black;
+}
+
+
+header{
+  width: 100%; 
+  padding: 0px 12px;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+nav ul li{
+    display: inline;
+    padding:0px 10px;
+}
+
+
+
+a{
+    color: white;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+.logo{
+    width: 120px;
+}
+
+.btn,.volunteer-mobile-btn{
+    padding-top: 17px;
+    padding-bottom: 17px;
+    padding-right: 17px;
+    padding-left: 17px;
+    background-color: rgb(157, 45, 4);
+}
+
+.icon{
+    display: none;
+}
+
+.volunteer-mobile-btn{
+    display: none;
+}
+
+@keyframes anime{
+    from{
+        background-image: url(image/animation-img-4.179538349077861b652d06d13d02c787.svg);
+        background-position: 100%;
+        background-repeat: repeat;
+        background-size: cover;
+    }
+    to{
+         background-image: url(image/img1.jpeg);
+        background-position: 100%;
+        background-repeat: repeat;
+        background-size: cover;
+        
+    }
+}
+
+
+
+
+.cointainer{
+   max-width: 100%;
+   height: 80vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation: anime;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+
+.enugusub{
+    margin-left: 40px;
+    color: white;
+}
+
+.btn2{
+ padding-top: 8px;
+ padding-bottom: 8px;
+ padding-left: 40px;
+ padding-right: 40px;
+ background-color: transparent;
+ color: white;
+ border-color: white;
+}
+
+.btn3{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: rgb(157, 45, 4);
+    color: white;
+    border: none;
+   }
+
+   .click{
+    margin-left: 100px;
+    margin-top: 10px;
+    animation: click 4s infinite;
+   }
+
+@keyframes click{
+    10%{
+        transform: translateY(-20px);
+    }
+
+    100%{
+        transform: translateY(20px);
+    }
+}
+
+.enugugov{
+    background-color: white;
+    display: flex;
+    gap: 100px;
+    justify-content:end;
+    /* align-items: center; */
+    text-align: center;
+    width: 320px;
+    margin-left: 900px;
+}
+
+.enuguimg{
+    width: 50px;
+    /* height: 50px; */
+}
+
+
+@media only screen and (width < 800px){
+
+   nav{
+    width: 100%;
+    height: 70vh;
+    position: absolute;
+    left: 0px;
+    top: 80px;
+    background-color:black;
+    opacity: 90%;
+    padding:20px 0px;
+    z-index: 1;
+    transition: display ease 1s;
+    display: none;
+    border-bottom-left-radius: 70px;
+    box-shadow: 0px 10px 2px 0px silver;
+   }
+
+   #mainmenu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+   }
+
+   .volunteer-mobile-btn{
+    display: block;
+}
+
+    .icon{
+        display: block;
+        color:white;
+    }
+
+
+    #open{
+        display: none;
+    }
+
+    header{
+        position: relative;
+    }
+
+  .btn{
+    display: none;
+  }
+
+  .enugugov{
+    background-color: white;
+    display: flex;
+    gap: 100px;
+    justify-content:end;
+    align-items: center;
+    text-align: center;
+    width: 320px;
+    margin-right: 10px;
+}
+
+
+    
+}
